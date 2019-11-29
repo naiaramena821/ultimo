@@ -2,6 +2,7 @@
 #include "enamorar.h"
 #include <iostream>
 #include <fstream>
+#include <stdlib.h>
 using namespace std;
 
 Libro::Libro()
@@ -17,11 +18,13 @@ void Libro::mostrar_estilos()
         cout << "(3)Fantasia" << endl;
         cout << "(4)Gotico" << endl;
         cin >> elegir_estilo;
+        system("cls");
     }
     while(elegir_estilo>4 && elegir_estilo<=0);
     {
     if(elegir_estilo==1){
         romance();
+
     }
     if(elegir_estilo==2){
         drama();
@@ -45,6 +48,7 @@ void Libro::drama()
     cout << "4. La ladrona de libros" << endl;
     cout << "5. volver a estilos" <<endl;
     cin>> Rdrama;
+    system("cls");
     }while(Rdrama<=0 || Rdrama>5);
     if(Rdrama==1){
         ifstream archivo;
@@ -113,6 +117,7 @@ void Libro::fantasia()
     cout << "3. Percy Jackson" << endl;
     cout << "4. Volver a Estilos" << endl;
     cin>> Rfantasia;
+    system("cls");
     }while(Rfantasia<=0 || Rfantasia>4);
     if(Rfantasia==1){
         ifstream archivo;
@@ -126,6 +131,7 @@ void Libro::fantasia()
             cout << texto << endl;
     }
     vol_fa();
+
     }
     if(Rfantasia==2){
         ifstream archivo;
@@ -170,6 +176,7 @@ void Libro::romance()
     cout << "6. Orgullo y Prejucio" << endl;
     cout << "7. Volver a estilos" << endl;
     cin>> fromance;
+    system("cls");
     }while(fromance<=0 || fromance>7);
     if(fromance==1){
         ifstream archivo;
@@ -264,6 +271,7 @@ void Libro::gotico()
     cout << "6. Melmoth el errabundo" << endl;
     cout << "7. Volver a estilos" << endl;
     cin>> Rgotico;
+    system("cls");
     if(Rgotico==1){
         ifstream archivo;
         string texto;
@@ -353,6 +361,7 @@ void Libro::vol_ro()
 
     cout << "volver (v)" << endl;
     cin >> vo;
+    system("cls");
     if (vo=='v')
     {
         romance();
@@ -364,6 +373,7 @@ void Libro::vol_go()
 
     cout << "volver (v)" << endl;
     cin >> vo;
+    system("cls");
     if (vo=='v')
     {
         gotico();
@@ -374,6 +384,7 @@ void Libro::vol_dr()
 
     cout << "volver (v)" << endl;
     cin >> vo;
+    system("cls");
     if (vo=='v')
     {
         drama();
@@ -383,6 +394,7 @@ void Libro::vol_fa()
 {
     cout << "volver (v)" << endl;
     cin >> vo;
+    system("cls");
     if (vo=='v')
     {
         fantasia();
