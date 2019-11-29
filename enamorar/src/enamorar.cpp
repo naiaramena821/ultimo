@@ -15,55 +15,66 @@ void Enamorar::siguiente_paso(int j)
     for(int i=j;i<=13;i++){
         if(i==2)
         {
+            system("cls");
             paso_2();
 
         }
         else if(i==3)
         {
+            system("cls");
             paso_3();
 
         }
         else if(i==4)
         {
+            system("cls");
             paso_4();
 
         }
         else if(i==5)
         {
+            system("cls");
             paso_5();
 
         }
         else if(i==6)
         {
+            system("cls");
             paso_6();
 
         }
         else if(i==7)
         {
+            system("cls");
             paso_7();
 
         }
         else if(i==8)
         {
+            system("cls");
             paso_8();
 
         }
         else if(i==9)
         {
+            system("cls");
             paso_9();
 
         }
         else if(i==10)
         {
+            system("cls");
             paso_10();
 
         }
         else if(i==11)
         {
+            system("cls");
             paso_11();
         }
         else if(i==12)
         {
+            system("cls");
             paso_12();
 
         }
@@ -78,6 +89,7 @@ void Enamorar::inicio()
     cout << "VAMOS (I)" << endl;
     char empezar;
     cin >> empezar;
+    system("cls");
     if(empezar == 'I')
     {
         lista();
@@ -100,6 +112,7 @@ void Enamorar::lista()
         cout << "#11 Siempre sonrie\n" <<endl;
         cout << "#12 Palabras amables y romanticas\n" <<endl;
         cin >> elegir_consejo;
+        system("cls");
     }
     while(elegir_consejo>12 || elegir_consejo<=0);
     if(elegir_consejo==1)
@@ -174,6 +187,7 @@ void Enamorar::paso_1()
     }
     else if(sig == "no")
     {
+        system("cls");
         volver();
     }
 }
@@ -199,6 +213,7 @@ void Enamorar::paso_2()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -224,6 +239,7 @@ void Enamorar::paso_3()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -249,6 +265,7 @@ void Enamorar::paso_4()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -274,6 +291,7 @@ void Enamorar::paso_5()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -296,6 +314,11 @@ void Enamorar::paso_6()
     if(sig == "yes")
     {
         siguiente_paso(7);
+    }
+    else
+    {
+        system("cls");
+        volver();
     }
 }
 
@@ -320,6 +343,7 @@ void Enamorar::paso_7()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -346,6 +370,7 @@ void Enamorar::paso_8()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -372,6 +397,7 @@ void Enamorar::paso_9()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -397,6 +423,7 @@ void Enamorar::paso_10()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -422,6 +449,7 @@ void Enamorar::paso_11()
     }
     else
     {
+        system("cls");
         volver();
     }
 }
@@ -439,7 +467,7 @@ void Enamorar::paso_12()
     archivo.close();
 
     cout << "has llegado al final" << endl;
-
+    system("cls");
        volver();
 }
 
@@ -448,6 +476,7 @@ void Enamorar::volver()
     cout << "Volver?\n yes"<< endl;
     string vol;
     cin >> vol;
+    system("cls");
     if(vol=="yes")
     {
         lista();
